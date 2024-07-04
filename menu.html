@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>BiteJoy Restaurant</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <a href="#" class="logo"><span>Bite</span>Joy.</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#locate">Locate</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="icons-header">
+        <a href="tel:00961" class="btn"
+          ><i class="fa-solid fa-phone"></i>Order Now</a
+        >
+        <a id="cart" class="shopping-cart" onclick="showAlert()"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Alert -->
+    <div id="alert-container" class="alert-container">
+      <button class="alert-close" onclick="closeAlert()">&times;</button>
+      <div id="alert-header" class="alert-header"></div>
+      <div id="alert-body" class="alert-body"></div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <h1 class="heading">Our <span>Menu!</span></h1>
+      <div class="container">
+        <div class="burger-item">
+          <img src="menu/Big-Mac.png" alt="Deluxe Burger Image" />
+          <h3>Deluxe Burger</h3>
+          <p>$9.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Deluxe Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/Big-Tasty.png" alt="Gourmet Burger Image" />
+          <h3>Gourmet Burger</h3>
+          <p>$10.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Gourmet Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/Cheese-Burger.png" alt="Classic Cheese Burger Image" />
+          <h3>Classic Cheese Burger</h3>
+          <p>$7.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Classic Cheese Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img
+            src="menu/Chicken-Burger.png"
+            alt="Grilled Chicken Burger Image"
+          />
+          <h3>Grilled Chicken Burger</h3>
+          <p>$8.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Grilled Chicken Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/Chicken-Mac.png" alt="Spicy Chicken Burger Image" />
+          <h3>Spicy Chicken Burger</h3>
+          <p>$8.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Spicy Chicken Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img
+            src="menu/Double-Cheese-Burger.png"
+            alt="Double Cheese Burger Image"
+          />
+          <h3>Double Cheese Burger</h3>
+          <p>$9.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Double Cheese Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img
+            src="menu/Grand-Chicken-Deluxe.png"
+            alt="Deluxe Chicken Burger Image"
+          />
+          <h3>Deluxe Chicken Burger</h3>
+          <p>$9.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Deluxe Chicken Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/QPC.png" alt="Quarter Pounder Burger Image" />
+          <h3>Quarter Pounder Burger</h3>
+          <p>$9.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Quarter Pounder Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/sinalco.png" alt="Veggie Burger Image" />
+          <h3>Veggie Burger</h3>
+          <p>$8.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Veggie Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/sinalco2.png" alt="Mushroom Burger Image" />
+          <h3>Mushroom Burger</h3>
+          <p>$8.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Mushroom Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/sinalco3.png" alt="BBQ Burger Image" />
+          <h3>Sinacola lite</h3>
+          <p>$2.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Sinacola lite', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/water.png" alt="Simple Burger Image" />
+          <h3>Water</h3>
+          <p>$0.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Water', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/Sweet-and-Sour.png" alt="Sweet & Sour Burger Image" />
+          <h3>Sweet & Sour Burger</h3>
+          <p>$8.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Sweet & Sour Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img
+            src="menu/Light-Vinigraitte-Sauce.png"
+            alt="Light Burger Image"
+          />
+          <h3>Light Burger</h3>
+          <p>$7.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Light Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/BBQ.png" alt="Smoky BBQ Burger Image" />
+          <h3>Smoky BBQ Burger</h3>
+          <p>$9.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Smoky BBQ Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/Mustard.png" alt="Mustard Burger Image" />
+          <h3>Mustard Burger</h3>
+          <p>$8.49</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Mustard Burger', 'green')"
+          >
+            Add
+          </button>
+        </div>
+        <div class="burger-item">
+          <img src="menu/potato1.png" alt="Crispy Potato Image" />
+          <h3>Crispy Potato</h3>
+          <p>$3.99</p>
+          <button
+            class="btn-order"
+            onclick="showAlert('Success', 'Crispy Potato', 'green')"
+          >
+            Add
+          </button>
+        </div>
+
+        <div class="burger-item">
+          <img src="menu/potato2.png" alt="Seasoned Potato Image" />
+          <h3>Seasoned Potato</h3>
+          <p>$4.49</p>
+          <button class="btn-order" onclick="showAlert()">Add</button>
+        </div>
+
+        <div class="burger-item">
+          <img src="menu/potato3.png" alt="Garlic Potato Image" />
+          <h3>Garlic Potato</h3>
+          <p>$4.99</p>
+          <button class="btn-order" onclick="showAlert()">Add</button>
+        </div>
+
+        <div class="burger-item">
+          <img src="menu/potato4.png" alt="Chili Cheese Potato Image" />
+          <h3>Chili Cheese Potato</h3>
+          <p>$5.49</p>
+          <button class="btn-order" onclick="showAlert()">Add</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="logo-container">
+          <a href="#" class="logo"><span>Bite</span>Joy.</a>
+        </div>
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <p>
+            <a href="mailto:contact@bitejoy.com" class="io"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            contact@bitejoy.com
+          </p>
+          <p>
+            <a href="tell:091" class="io"><i class="fa-solid fa-phone"></i></a>
+            Phone: +961 03 313 616
+          </p>
+          <p>
+            <a href="google.com/maps" target="_blank" class="io"
+              ><i class="fa-solid fa-location-dot"></i
+            ></a>
+            Address: Maps ,Zahle, Lebanon
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#locate">Locate</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="para">
+          <p>
+            &copy; 2024 <span>Bite</span>Joy. All rights reserved. Website By
+            <a href="https://wa.me/0096178941518">Wael Alhamad</a>
+          </p>
+        </div>
+        <!-- Whatsapp Icon -->
+        <a href="https://wa.me/0096178941518" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="/JavaScript/alertMessage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  </body>
+</html>

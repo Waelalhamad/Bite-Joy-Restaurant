@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>BiteJoy Restaurant</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <a href="#" class="logo"><span>Bite</span>Joy.</a>
+      <nav>
+        <a href="index.html#home" class="active">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#locate">Locate</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="icons-header">
+        <a href="tel:00961" class="btn"
+          ><i class="fa-solid fa-phone"></i>Order Now</a
+        >
+        <a id="cart" class="shopping-cart" onclick="showAlert()"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h2><span>Bite</span>Joy.</h2>
+        <h3>Better Food, <span>Better Mood!</span></h3>
+        <p>
+          Welcome to BiteJoy, where joy meets flavor in every dish. Explore our
+          menu, order online, and enjoy delicious flavors delivered to your
+          doorstep. Elevate your dining experience with BiteJoy today.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <button class="btn">
+          Our Menu<i class="fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="home-img">
+        <img src="images/home.png" alt="Burger" />
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <h1 class="heading">About <span>Us!</span></h1>
+      <div class="container">
+        <div class="about-content">
+          <h2>Welcome to <span>Bite</span>Joy!</h2>
+          <p>
+            At BiteJoy, we believe every bite should bring joy! Indulge in our
+            mouth-watering burgers crafted with the finest ingredients and
+            grilled to perfection. From classic flavors to unique creations, our
+            menu offers a delightful range to satisfy every burger lover's
+            craving. Join us for a memorable dining experience where every bite
+            is a celebration of flavor and happiness.
+          </p>
+          <a href="#locate" class="btn"
+            >Location<i class="fa-solid fa-location-dot"></i
+          ></a>
+        </div>
+        <div class="about-img">
+          <img src="images/about.jpg" alt="About" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Locate Section -->
+    <section class="locate" id="locate">
+      <h1 class="heading">Our <span>Location!</span></h1>
+      <div class="container">
+        <div class="content">
+          <img src="images/locate.jpg" alt="" />
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271304.243806944!2d2.220270406250024!3d51.51292060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035377211ff9%3A0x70ea525c70b6e50f!2sHonest%20Burgers%20Bank!5e0!3m2!1sar!2slb!4v1713081600713!5m2!1sar!2slb"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-s" id="contact">
+      <h1 class="heading">Contact <span>Us!</span></h1>
+      <form>
+        <div class="input-box">
+          <input name="name" type="text" placeholder="Full Name" />
+          <input name="email" type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input name="number" type="number" placeholder="Mobile Number" />
+          <input name="subject" type="text" placeholder="Email Subject" />
+        </div>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <a href="#" class="btn">Send Mesage</a>
+      </form>
+    </section>
+
+    <!-- News Letter -->
+     <div class="news-container">
+      <h2 class="heading">Our <span>Newsletter</span></h2>
+      <form id="subscription-form">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button class="btn" type="submit">Subscribe</button>
+      </form>
+     </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="logo-container">
+          <a href="#" class="logo"><span>Bite</span>Joy.</a>
+        </div>
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <p>
+            <a href="mailto:contact@bitejoy.com" class="io"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            contact@bitejoy.com
+          </p>
+          <p>
+            <a href="tell:091" class="io"><i class="fa-solid fa-phone"></i></a>
+            Phone: +961 03 313 616
+          </p>
+          <p>
+            <a href="google.com/maps" target="_blank" class="io"
+              ><i class="fa-solid fa-location-dot"></i
+            ></a>
+            Address: Maps ,Zahle, Lebanon
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#locate">Locate</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="para">
+          <p>
+            &copy; 2024 <span>Bite</span>Joy. All rights reserved. Website By
+            <a>Wael Alhamad</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/0096178941518" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Js -->
+    <script src="/JavaScript/activeNav.js-ذ"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  </body>
+</html>
